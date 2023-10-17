@@ -1,4 +1,4 @@
-import MyComponent from "./StrelkX2/StrelkX2.js";
+import MyComponent from "./StrelkX2/StrelkX.js";
 
 export default function App() {
   return (
