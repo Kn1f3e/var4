@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function MyComponent() {
+function StrelkX() {
   const [count, setCount] = useState(5);
   const incrementCount = () => {
     for (let i = 0; i <= 100; i++) {
