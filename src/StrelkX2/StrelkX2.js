@@ -2,17 +2,10 @@ import React, { useState } from "react";
 
 function MyComponent() {
   const [count, setCount] = useState(5);
-  const incrementCount = (count) => {
-    for (let i = 0; i < 7; i++) {
-      setCount((prevCount) => {
-        const newCount = prevCount + 1;
-        console.log(newCount);
-        if (newCount > 100) {
-          return prevCount;
-        }
-        return newCount;
-      });
-      if (count() > 100) {
+  const incrementCount = () => {
+    for (let i = 0; i <= 100; i++) {
+      setCount(count + 7);
+      if (count > 100) {
         break;
       }
     }
@@ -21,7 +14,7 @@ function MyComponent() {
   return (
     <div>
       <h1> Счёт: {count} </h1>
-      <button onClick={incrementCount}>Прирост</button>
+      <button onClick={() => incrementCount()}>Прирост</button>
     </div>
   );
 }
